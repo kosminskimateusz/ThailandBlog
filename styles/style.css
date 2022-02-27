@@ -17,6 +17,10 @@
   font-weight: 400;
 }
 
+.white {
+  color: #FFFFFF;
+}
+
 .line {
   width: 85vw;
   max-width: 1400px;
@@ -50,6 +54,11 @@
   height: 300px;
 }
 
+.full-article {
+  display: flex;
+  
+}
+
 .article-img {
   width: 345.8px;
   height: 300px;
@@ -74,7 +83,7 @@
 }
 
 
-.short-article-content {
+.article-content {
   position: relative;
   padding-left: 5.5rem;
 }
@@ -82,7 +91,8 @@
 .article-header {
   font-size: 24px;
   font-weight: 400;
-  padding-bottom: 2rem;
+  height: 4rem;
+  padding-bottom: 1rem;
 }
 
 .article-description {
@@ -100,7 +110,7 @@
   padding-top: 1.5rem;
 }
 
-.more {
+.tags {
   position: absolute;
   bottom: 1rem;
   display: flex;
@@ -109,11 +119,14 @@
   font-weight: 400;
 }
 
-.more>a {
+.tags>p {
   color: #399FD6;
   text-decoration: none;
 }
 
-.more>a:hover {
-  text-decoration: underline;
+.about-us {
+  background-image: url("./../images/AboutUsBackground.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
