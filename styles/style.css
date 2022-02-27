@@ -19,6 +19,7 @@
 
 .line {
   width: 85vw;
+  max-width: 1400px;
   margin: auto;
   border-style: none;
   border-top-width: 3px;
@@ -35,10 +36,13 @@
 }
 
 .articles {
-  width: 75vw;
+  width: 80vw;
+  max-width: 1250px;
   margin: auto;
-  padding: 5rem 0;
+  padding: 4.5rem 0;
   display: flex;
+  flex-direction: column;
+  gap: 7rem;
 }
 
 .short-article {
@@ -49,11 +53,30 @@
 .article-img {
   width: 345.8px;
   height: 300px;
+  position: relative;
 }
+
+.read-more-button {
+  cursor: pointer;
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  border: none;
+  padding: 0.7rem 3rem;
+  border-radius: 0.8rem;
+  font-size: 14px;
+  font-weight: 400;
+  transition: background .8s;
+}
+
+.read-more-button:hover {
+  background: rgba(255, 255, 255, 0.699);
+}
+
 
 .short-article-content {
   position: relative;
-  padding: 0 5rem;
+  padding-left: 5.5rem;
 }
 
 .article-header {
@@ -68,6 +91,8 @@
 }
 
 .info {
+  position: absolute;
+  bottom: 4rem;
   display: flex;
   gap: 3rem;
   font-size: 14px;
