@@ -1,6 +1,6 @@
 const articles = [
   {
-    id: 1,
+    id: 0,
     img: "Ayutthaya.svg",
     header: "How to get to Ayutthaya - all informations",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae atque error quasi tempore incidunt debitis, omnis accusantium totam libero saepe, quia cumque culpa aliquid similique asperiores suscipit inventore amet vitae quis quas maiores vero necessitatibus quibusdam soluta! Distinctio vero consequuntur velit dolore blanditiis ipsa voluptatem saepe voluptate nostrum ut animi corrupti eos nobis esse non eius quibusdam, nemo vitae libero eum perferendis itaque aliquam doloremque? Quibusdam, ipsa atque autem accusantium recusandae voluptate nihil corrupti eligendi sequi cum, labore sint non magni commodi nemo deserunt, ullam quo exercitationem voluptatibus ex id. Provident, rem? Iure fuga illum natus laborum adipisci, exercitationem doloremque commodi error pariatur. Blanditiis tempora accusantium, nihil fugit voluptatum possimus. Dolore voluptate quas dolorum dolor possimus soluta aut veniam corporis, repellat minima quasi! Ut corrupti sit dolorem eligendi maxime, deserunt dolor necessitatibus molestiae excepturi quibusdam, veritatis incidunt? Quos tenetur magni delectus recusandae dicta reprehenderit doloribus quia repudiandae, ea velit libero.",
@@ -12,7 +12,7 @@ const articles = [
     ]
   },
   {
-    id: 2,
+    id: 1,
     img: "WatArun.svg",
     header: "Travel Guide to visiting Wat Arun (Temple of Dawn)",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quibusdam, voluptatum vel repudiandae accusantium inventore officia iure, sed molestiae doloremque exercitationem magni voluptatem cumque aspernatur. Dignissimos aspernatur numquam atque veniam excepturi consequuntur velit vitae dolorem doloribus nisi aliquid quia placeat voluptates earum, quidem, sapiente laudantium exercitationem voluptatem perferendis? Nihil minima magnam laudantium. Alias sint explicabo quia, assumenda hic pariatur aut molestiae repellendus magni ea vitae error inventore cumque eos natus molestias! Nam, quibusdam. Quaerat, error cumque? Fugiat reiciendis facere in hic sapiente distinctio, odio reprehenderit modi deleniti aspernatur temporibus ad maiores. Nulla tempore odit esse molestiae cupiditate omnis! Sed totam illum quas quam a ratione error tenetur, cupiditate nobis dolorem qui officiis illo recusandae adipisci fugiat blanditiis doloribus iste ex voluptatum excepturi voluptate corporis dolor repellat eos? Minus blanditiis nam voluptate tempore laborum totam maiores sunt veniam ut accusantium odio mollitia quas alias saepe vitae modi, sit soluta. Deserunt, tempora.",
@@ -24,7 +24,7 @@ const articles = [
     ]
   },
   {
-    id: 3,
+    id: 2,
     img: "Pattaya.svg",
     header: "Night Life in Pattaya - what to do to survive",
     description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit doloremque mollitia illum blanditiis laborum maxime consectetur accusantium? Illum itaque numquam suscipit praesentium atque possimus harum totam non, voluptatibus maxime eos! Consequuntur exercitationem est alias? Illum laborum voluptatibus molestiae, hic esse, mollitia deleniti quos odio est voluptas ipsa harum nihil facilis! Minima sit non placeat doloribus, quidem modi optio voluptatibus qui cum magnam exercitationem distinctio consequatur eius numquam commodi nemo, ducimus inventore neque quos cumque officia reprehenderit impedit dolorem? Porro pariatur voluptatum optio. Vel dolorem reiciendis veritatis et dicta! Vitae, itaque inventore illum distinctio adipisci nihil hic quas ducimus sunt excepturi? Ut iste numquam itaque minus impedit voluptatibus ipsam beatae totam laboriosam. Quae ducimus mollitia saepe optio voluptatem, accusantium quasi unde nihil voluptatibus quidem officia natus rem tenetur ipsa earum sit vel! Possimus placeat explicabo quae voluptatum quidem, voluptates, illum beatae, facere atque praesentium fuga ab. Doloribus reiciendis qui excepturi nesciunt.",
@@ -36,10 +36,10 @@ const articles = [
     ]
   },
   {
-    id: 4,
+    id: 3,
     img: "Menam.svg",
     header: "Everything about Menam",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quae ducimus tempora delectus excepturi impedit porro dolorem repellendus sint reiciendis harum distinctio voluptate officiis corporis quas, doloremque consequatur suscipit dolor vero quaerat, ratione temporibus! Hic reprehenderit voluptates itaque in ut. Optio veritatis eligendi dolore corrupti. Natus, commodi numquam officia labore cum minima, ipsa error doloremque eligendi modi quibusdam assumenda quasi eaque, ullam nesciunt! Voluptatum, ea minus! Suscipit, aperiam, labore doloribus odio quo id nobis explicabo rerum in beatae mollitia! Explicabo libero saepe eveniet sequi ipsam. Non assumenda vel placeat debitis quisquam a libero voluptates. Itaque rem mollitia dolor, quae adipisci omnis repudiandae quam esse similique facilis aliquid eveniet consequatur corporis voluptates blanditiis consectetur earum molestias cumque cupiditate? Culpa, vel eius architecto, velit illum nisi aspernatur, distinctio possimus sint sequi aliquam. Vel iure exercitationem aspernatur tempora blanditiis dignissimos, officia praesentium, harum similique neque quo quis molestias. Possimus ex praesentium maxime suscipit!",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quae ducimus tempora delectus excepturi impedit porro dolorem repellendus sint reiciendis harum distinctio voluptate officiis corporis quas, doloremque consequatur suscipit dolor vero quaerat, ratione temporibus! Hic reprehenderit voluptates itaque in ut. Optio veritatis eligendi dolore corrupti. Natus, commodi numquam officia labore cum minima, ipsa error doloremque eligendi modi quibusdam assumenda quasi eaque, ullam nesciunt! Voluptatum, ea minus! Suscipit, aperiam, labore doloribus odio quo id nobis explicabo rerum in beatae mollitia! Explicabo libero saepe eveniet sequi ipsam. Non assumenda vel placeat debitis quisquam a libero voluptates. Itaque rem mollitia dolor, quae adipisci omnis repudiandae quam esse similique facilis aliquid eveniet consequatur corporis voluptates blanditiis consectetur earum molestias cumque cupiditate? Culpa, vel eius architecto, velit illum nisi aspernatur, distinctio possimus sint sequi aliquam. Vel iure exercitationem aspernatur tempora blanditiis dignissimos, officia praesentium, harum similique neque quo quis molestias. Possimus ex praesentium maxime suscipit!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quae ducimus tempora delectus excepturi impedit porro dolorem repellendus sint reiciendis harum distinctio voluptate officiis corporis quas, doloremque consequatur suscipit dolor vero quaerat, ratione temporibus! Hic reprehenderit voluptates itaque in ut. Optio veritatis eligendi dolore corrupti. Natus, commodi numquam officia labore cum minima, ipsa error doloremque eligendi modi quibusdam assumenda quasi eaque, ullam nesciunt! Voluptatum, ea minus! Suscipit, aperiam, labore doloribus odio quo id nobis explicabo rerum in beatae mollitia! Explicabo libero saepe eveniet sequi ipsam. Non assumenda vel placeat debitis quisquam a libero voluptates. Itaque rem mollitia dolor, quae adipisci omnis repudiandae quam esse similique facilis aliquid eveniet consequatur corporis voluptates blanditiis consectetur earum molestias cumque cupiditate? Culpa, vel eius architecto, velit illum nisi aspernatur, distinctio possimus sint sequi aliquam. Vel iure exercitationem aspernatur tempora blanditiis dignissimos, officia praesentium, harum similique neque quo quis molestias. Possimus ex praesentium maxime suscipit!",
     date: "3.02.2022",
     author: "Bastian Molenda & Dawid Pioś",
     tags: [
@@ -48,7 +48,7 @@ const articles = [
     ]
   },
   {
-    id: 5,
+    id: 4,
     img: "BurmaRailway.svg",
     header: "The Burma Railway, also known as the Death Railway",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, est repellat? Accusamus excepturi consectetur velit. Earum hic unde nam! Amet recusandae similique quidem exercitationem ad error libero, minima quis expedita voluptatum dicta. Minus sunt labore at facilis dolor, sint fugit consequuntur modi expedita veniam voluptatem dignissimos dolorum recusandae provident a impedit deserunt autem, praesentium ut sapiente molestiae! At sequi ratione veritatis quod voluptatibus tenetur sint commodi a consectetur praesentium, culpa eum consequatur voluptatum tempore nostrum, accusantium reiciendis dicta aliquid voluptatem amet eos saepe? Molestias architecto voluptas commodi suscipit reprehenderit cumque, iste cum quo eaque tempore ut quos ab, animi optio odio at accusamus incidunt! Dicta amet provident tempore voluptas ipsum quasi nesciunt cupiditate cumque nulla, tenetur ratione consectetur voluptate aperiam et ea harum labore. Tempora nisi esse vitae, iure ipsa quae autem magnam, nulla laboriosam eos ducimus soluta. Doloremque consequuntur tenetur cumque veniam, cum eum illum quisquam eveniet iusto possimus?",
@@ -60,7 +60,7 @@ const articles = [
     ]
   },
   {
-    id: 6,
+    id: 5,
     img: "Covid.svg",
     header: "How tight travel restricions in Covid hit Thailand tourism?",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias aspernatur debitis tempore veritatis commodi dolore eum nulla dolorum est, et temporibus, recusandae obcaecati reprehenderit, porro error! Aliquid temporibus eveniet maxime magni molestiae illum unde rem non inventore minus! Exercitationem, alias! Officia dolores, mollitia voluptatem ducimus praesentium neque. Repellat voluptatem illo veritatis ad unde minima, maxime voluptate. Magni vel eveniet voluptatibus! Ipsum, ipsam expedita corporis sint deserunt beatae architecto quibusdam pariatur hic labore omnis iste fugit mollitia, distinctio nobis tempore? Repudiandae aliquam nulla consequuntur tempora vero obcaecati voluptate maiores, quidem officiis fugit, natus ipsa autem possimus modi tenetur odit cumque enim atque sint est blanditiis. Aliquam sed vitae repellat mollitia reiciendis, architecto iusto, corporis est eius possimus ratione voluptatem perspiciatis quasi dolorem nihil quo facilis recusandae repudiandae. Quas nobis repellendus, commodi qui dolore cupiditate impedit dolorem. Exercitationem adipisci, nostrum dolor odit architecto dignissimos illo natus vero minima voluptas vitae deserunt eaque?",
@@ -74,17 +74,18 @@ const articles = [
 ];
 const DOMArticles = document.querySelector('.articles');
 
-articles.forEach((el) => {
+const refresh_articles = articles.forEach((el) => {
   // Add img with button
   const article_img = document.createElement('img');
   article_img.classList.add('article-img');
-  article_img.classList.add('article-img-slide');
+  // article_img.classList.add('article-img-slide');
 
 
   article_img.src = `./images/${el.img}`;
 
   const read_more = document.createElement('button');
   read_more.classList.add('read-more-button');
+  // read_more.classList.add('disapeared');
   read_more.innerText = "Read more";
 
   const article_logo = document.createElement('figure');
@@ -137,7 +138,7 @@ articles.forEach((el) => {
   short_article_content.appendChild(description);
   short_article_content.appendChild(article_footer);
 
-    
+
   // Create article
   const article = document.createElement('article');
   article.classList.add('short-article');
@@ -145,11 +146,31 @@ articles.forEach((el) => {
 
   // test
 
-  
+
   article.appendChild(article_logo);
   article.appendChild(short_article_content);
   DOMArticles.appendChild(article);
 })
 
-const full_article_height = document.querySelector('.full-article').clientHeight;
-full_article_height.style
+
+const read_more_buttons = document.querySelectorAll('.read-more-button');
+
+read_more_buttons.forEach((button, id) => {
+  button.addEventListener('click', () => {
+    button.classList.add('disapeared');
+    button.parentElement.classList.add('article-img-slide')
+    console.log('ok');
+    const article_img = button.parentElement.querySelector('.article-img');
+    const article_description = button.parentElement.parentElement.querySelector('.article-content').querySelector('.article-description');
+
+    article_description.innerHTML = `<p class="article-description-full">${articles[id].description}</p>`;
+
+    const article_height = button.parentElement.parentElement.querySelector('.article-content').querySelector('.article-description-full').clientHeight;
+
+    article_img.style.transition = `transform 1s`;
+    article_img.style.transform = `translateY(${article_height/4}px)`;
+    console.log(article_height/2);
+    console.log(article_description.clientHeight);
+  })
+});
+
