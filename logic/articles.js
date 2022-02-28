@@ -72,11 +72,15 @@ const articles = [
     ]
   }
 ];
+const DOMArticles = document.querySelector('.articles');
 
 articles.forEach((el) => {
   // Add img with button
   const article_img = document.createElement('img');
   article_img.classList.add('article-img');
+  article_img.classList.add('article-img-slide');
+
+
   article_img.src = `./images/${el.img}`;
 
   const read_more = document.createElement('button');
@@ -122,22 +126,30 @@ articles.forEach((el) => {
     tags.appendChild(tag);
   })
 
+  const article_footer = document.createElement('div');
+  article_footer.classList.add('article-footer');
+  article_footer.appendChild(info);
+  article_footer.appendChild(tags);
+
   const short_article_content = document.createElement('div');
   short_article_content.classList.add('article-content');
   short_article_content.appendChild(header);
   short_article_content.appendChild(description);
-  short_article_content.appendChild(info);
-  short_article_content.appendChild(tags);
+  short_article_content.appendChild(article_footer);
 
+    
   // Create article
   const article = document.createElement('article');
   article.classList.add('short-article');
+  // article.classList.add('full-article');
 
   // test
 
-  const DOMArticles = document.querySelector('.articles');
+  
   article.appendChild(article_logo);
   article.appendChild(short_article_content);
   DOMArticles.appendChild(article);
 })
 
+const full_article_height = document.querySelector('.full-article').clientHeight;
+full_article_height.style
