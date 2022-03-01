@@ -155,3 +155,8 @@
   background-size: cover;
   height: 100vh;
 }
+
+.slide-down {
+  transition: all 1s;
+  transform: translateY(30px);
+}

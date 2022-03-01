@@ -73,11 +73,13 @@ const articles = [
   }
 ];
 const DOMArticles = document.querySelector('.articles');
+const max_short_description_size = 300;
 
 const refresh_articles = articles.forEach((el) => {
   // Add img with button
   const article_img = document.createElement('img');
   article_img.classList.add('article-img');
+  article_img.alt = el.header;
   // article_img.classList.add('article-img-slide');
 
 
@@ -99,7 +101,7 @@ const refresh_articles = articles.forEach((el) => {
   header.classList.add('article-header');
   header.innerText = el.header;
 
-  const max_short_description_size = 300;
+
   const description = document.createElement('p');
   description.classList.add('article-description');
   const short_description = el.description.substring(0, max_short_description_size) + '...';
@@ -163,14 +165,71 @@ read_more_buttons.forEach((button, id) => {
     const article_img = button.parentElement.querySelector('.article-img');
     const article_description = button.parentElement.parentElement.querySelector('.article-content').querySelector('.article-description');
 
-    article_description.innerHTML = `<p class="article-description-full">${articles[id].description}</p>`;
+    // article_description.innerHTML = `<p class="article-description-full">${articles[id].description}</p>`;
 
-    const article_height = button.parentElement.parentElement.querySelector('.article-content').querySelector('.article-description-full').clientHeight;
+
+    moreTextLoad(article_description, articles[id].description);
+
+    const article_height = button.parentElement.parentElement.querySelector('.article-content').querySelector('.article-description').clientHeight;
 
     article_img.style.transition = `transform 1s`;
-    article_img.style.transform = `translateY(${article_height/4}px)`;
-    console.log(article_height/2);
+    article_img.style.transform = `translateY(calc(${(article_height + 50) / 4}px)`;
+    console.log(article_height / 2);
     console.log(article_description.clientHeight);
+
+    article_description.parentElement.classList.add('slide-down');
   })
 });
 
+// function moreTextLoad(article_description, full_text) {
+//   for (let i = max_short_description_size; i < full_text.length; i++) {
+//     setTimeout(function() {
+
+//       let text = full_text.substring(0, i + 1);
+//       if (text.length !== full_text.length) {
+//         text += '...';
+//       }
+//       // console.log('text length', text.length, 'full text length', full_text.length);
+//       // console.log(text);
+
+
+
+//       article_description.innerHTML = `<p class="article-description-full"></p>`;
+//       article_description.firstChild.innerHTML = text;
+//       // console.log(text);
+//     }, 300);
+
+//   }
+// }
+
+
+function moreTextLoad(article_description, full_text) {
+
+  const loadText = async () => {
+    for (let i = max_short_description_size; i < full_text.length; i++) {
+      let text = full_text.substring(0, i + 1);
+
+      if (text.length !== full_text.length) {
+        text += '...';
+      }
+
+      if (i % 20 === 0) {
+        article_description.innerHTML = `<p class="article-description-full"></p>`;
+        article_description.firstChild.innerHTML = text;
+        await sleep(10);
+        // console.log(i, i%100);
+      } else if (i === text.length - 1) {
+        article_description.firstChild.innerHTML = text;
+      }
+
+      // console.log(text);
+
+    }
+  }
+  loadText();
+}
+
+
+const sleep = (miliseconds) => {
+  return new Promise(resolve => setTimeout(resolve, miliseconds))
+}
