@@ -213,7 +213,9 @@ function moreTextLoad(article_description, full_text) {
         text += '...';
       }
 
-      if (i % 20 === 0) {
+      const signsToAppend = 20;
+
+      if (i % signsToAppend === 0) {
         article_description.innerHTML = `<p class="article-description-full"></p>`;
         article_description.firstChild.innerHTML = text;
         await sleep(10);
