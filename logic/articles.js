@@ -167,13 +167,21 @@ read_more_buttons.forEach((button, id) => {
 
     // article_description.innerHTML = `<p class="article-description-full">${articles[id].description}</p>`;
 
+    read_more_buttons.forEach((butt, number) => {
+      if (id !== number) {
+        butt.classList.remove('disapeared');
+        butt.classList.add('show');
+      } else {
+        butt.classList.remove('show');
+      }
+    })
 
     moreTextLoad(article_description, articles[id].description);
 
-    const article_height = button.parentElement.parentElement.querySelector('.article-content').querySelector('.article-description').clientHeight;
+    const article_height = button.parentElement.parentElement.querySelector('.article-content').querySelector('.article-description-full').clientHeight;
 
     article_img.style.transition = `transform 1s`;
-    article_img.style.transform = `translateY(calc(${(article_height + 50) / 4}px)`;
+    article_img.style.transform = `translateY(calc(${(article_height) / 2}px))`;
     console.log(article_height / 2);
     console.log(article_description.clientHeight);
 
@@ -231,6 +239,12 @@ function moreTextLoad(article_description, full_text) {
   loadText();
 }
 
+function shortTextLoad(article_description, full_text) {
+  const splitText = async () => {
+
+  } 
+
+}
 
 const sleep = (miliseconds) => {
   return new Promise(resolve => setTimeout(resolve, miliseconds))
