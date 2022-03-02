@@ -129,6 +129,12 @@
   font-size: 14px;
   font-weight: 300;
 }
+.articles .short-article .article-content .article-footer .info .date {
+  font-size: inherit;
+}
+.articles .short-article .article-content .article-footer .info .author {
+  font-size: inherit;
+}
 .articles .short-article .article-content .article-footer .tags {
   display: flex;
   gap: 3rem;
@@ -139,6 +145,7 @@
 .articles .short-article .article-content .article-footer .tags p {
   color: #399fd6;
   text-decoration: none;
+  font-size: 18px;
 }
 
 .about-us {
@@ -148,4 +155,4 @@
   height: 100vh;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=article-style.css.map */
